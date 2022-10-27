@@ -1,0 +1,1280 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fixtires & results | Busa League Football News, Fixtures, Scores & Results</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color: white;">
+        <div id="mainDiv">
+            <div class="logo_area"><img src="https://i.ibb.co/j3gZ4WM/busa-logo.jpg" alt="This image does not exist" height="68px" aria-label="Busa League Home Page on Logo"></div>
+            <div class="navigation" onclick="navChange()"><img src="menu.png" class="navImage" alt=""></div>
+            <div class="navDiv">
+                    <ul class="udav" >
+                        <li><a href="index.html">Busa League</a></li>
+                        <li><a href="stories.html">Latest</a></li>
+                        <li><a href="Fixtures&Results.html">Fixtures & Results</a></li>
+                        <li><a href="standings.html">Groups</a></li>
+                        <li><a href="draws.html">Draws</a></li>
+                        <li class="km"><a href="#">Know More</a></li>
+                        <div id="mini_div">
+                            <a style="text-decoration: none;" href="index.html">Busa League</a>
+                            <a style="text-decoration: none;" href="stories.html">Latest</a>
+                            <a style="text-decoration: none;" href="Fixtures&Results.html">Fixtures & Results</a>
+                            <a style="text-decoration: none;" href="standings.html">Groups</a>
+                            <a style="text-decoration: none;" href="draws.html">Draws</a>
+                            <a style="text-decoration: none;" href="#">Know More</a>
+                        </div>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="span_draw_header" style="height: 64px;">
+            <div class="span_draw_header_">
+                <div class="span_draw_header_closed">
+                    <header>
+                        <h1>Fixtures & results</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <div id="filterDiv">
+            <div class="club_filter">
+                <span>Filter by</span>
+                <button onclick="display()" id="button_club_filter"><span>Club</span>
+                    <img src="arrow-down-2-svgrepo-com.svg" alt="">
+                </button>
+            </div>
+            <div id="club_display"> 
+                <div id="club_logo">
+                    <img class="logo_seen" src="https://i.ibb.co/fXR2Jth/ac-milan.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/zGL4PSh/everton.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/YbfJ4m1/interlogo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/j6skRXn/liverpool.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/PQxn8XT/man-utd.png" width="61px" height="61px" alt="Missing Image">
+                    <img class="logo_seen" src="https://i.ibb.co/TTCn3JJ/psg.png" width="61px" height="61px" alt="Missing Image">
+                </div>
+            </div>
+        </div>
+
+        <section id="to_matches_played">
+            <div id="matches_played_container">
+                <div id="matches_played_scroller">
+                    <div id="scroller_scroller">
+                        <div class="scroller_pass" onclick="change('container_')">
+                            <span class="span_slider">Group stage draw</span>
+                            <span class="slider_date">23 Aug 2021</span>
+                        </div>                    
+                        <div class="scroller_pass" onclick="change('container_1')">
+                            <span class="span_slider">Group stage - Matchday 1</span>
+                            <span class="slider_date">September 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_2')">
+                            <span class="span_slider">Group stage - Matchday 2</span>
+                            <span class="slider_date">September 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_3')">
+                            <span class="span_slider">Group stage - Matchday 3</span>
+                            <span class="slider_date">September 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_4')">
+                            <span class="span_slider">Group stage - Matchday 4</span>
+                            <span class="slider_date">October 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_5')">
+                            <span class="span_slider">Group stage - Matchday 5</span>
+                            <span class="slider_date">October 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_6')">
+                            <span class="span_slider">Group stage - Matchday 6</span>
+                            <span class="slider_date">October 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_draw')">
+                            <span class="span_slider">Round of 16 draw</span>
+                            <span class="slider_date">October 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_draw1')">
+                            <span class="span_slider">Round of 16 - First leg</span>
+                            <span class="slider_date">November 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_draw2')">
+                            <span class="span_slider">Round of 16 - Secong leg</span>
+                            <span class="slider_date">November 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_finals_draw')">
+                            <span class="span_slider">Quater and semi-finals draw</span>
+                            <span class="slider_date">November 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_qf_1')">
+                            <span class="span_slider">Quater-finals - First leg</span>
+                            <span class="slider_date">December 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_qf_2')">
+                            <span class="span_slider">Quater-finals - Second leg</span>
+                            <span class="slider_date">December 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_sf1')">
+                            <span class="span_slider">Semi-finals - First leg</span>
+                            <span class="slider_date">December 2021</span>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_sf2')">
+                            <span class="span_slider">Semi-finals - Second leg</span>
+                            <span class="slider_date">January 2021</h1>
+                        </div>
+                        <div class="scroller_pass" onclick="change('container_finals')">
+                            <span class="span_slider">Final</span>
+                            <span class="slider_date">January 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="svg_scroll_right"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z"/></svg></div>
+                <div id="svg_scroll_left"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z"/></svg></div>
+            </div>
+        </section>
+        
+        <section id="main_section">
+            <div id="container_main_section">
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class='versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+         </div>
+
+            <div id="container_1" style="display: none;">
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container_2" style="display: none;">
+                <div class="day_title">Friday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                        </a>
+                     </div>
+
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="day_title">Sunday 4 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Thursday 5 September 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container_3" style="display: none;">
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                        </a>
+                    </div>  
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="day_title">Thursday 4 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Friday 5 September 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container_4" style="display: none;">
+                <div class="day_title">Friday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="day_title">Sunday 4 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Thursday 5 September 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container_5" style="display: none;">
+                <div class="day_title">Sunday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                        </a>
+                 </div>  
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="day_title">Thursday 4 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Friday 5 September 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+            </div>
+
+            <div id="container_6" style="display: none;">
+                <div class="day_title">Friday 5 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+
+
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="day_title">Sunday 4 October 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="day_title">Thursday 5 September 2021</div>
+                <div class="main_section_days">
+                    <div class="main_section_details">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="group_name"><h3>Group A</h3></div>
+                                <div class="versus_home"><span>Inter</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                                <div class="versus">VS</div>
+                                <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/TTCn3JJ/psg.png" alt="Image Not Found"><span>PSG</span></div>
+                            </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group A</h3></div>
+                            <div class="versus_home"><span>Celtic</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/zGL4PSh/everton.png" alt="Image Not Found"><span>Everton</span> </div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Man ciy</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/fXR2Jth/ac-milan.png" alt="Image Not Found"><span>Milan</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group B</h3></div>
+                            <div class="versus_home"><span>Leicester</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" alt="Image Not Found"><span>Barcelona</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Roma</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" alt="Image Not Found"><span>Aston Villa</span></div>
+                        </a>
+                    </div>
+                    <div class="main_section_details">
+                        <a href="#" style="text-decoration: none;">
+                            <div class="group_name"><h3>Group C</h3></div>
+                            <div class="versus_home"><span>Athletico</span><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" alt="Image Not Found"></div>
+                            <div class="versus">VS</div>
+                            <div class="versus_away"><img class = 'versus_logo' height="39px" width="39px" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" alt="Image Not Found"><span>Arsenal</span> </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer id="home_footer">
+            <div class="footer_details">
+                <div class="footer_shortcut">
+                    <span class="footer_shortcut_span">Latest</span>
+                    <span class="footer_shortcut_span">Fixtures & Results</span>
+                    <span class="footer_shortcut_span">Groups</span>
+                    <span class="footer_shortcut_span">Draws</span>
+                    <span class="footer_shortcut_span">Know More</span>
+                    <div class="footer_follows"><span class="footer_follow_span">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>                </span></div>
+                     </div>
+                </div>
+        </footer>
+        <script src="Index.js"></script>
+    </body>
+</html>

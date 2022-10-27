@@ -1,0 +1,663 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Busa League Football News, Fixtures, Scores & Results</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="mainDiv">
+            <div class="logo_area"><img src="https://i.ibb.co/j3gZ4WM/busa-logo.jpg" alt="This image does not exist" height="68px" aria-label="Busa League Home Page on Logo"></div>
+            <div class="navigation" onclick="navChange()"><img src="menu.png" class="navImage" alt=""></div>
+            <div class="navDiv">
+                    <ul class="udav" >
+                        <li><a href="index.html">Busa League</a></li>
+                        <li><a href="stories.html">Latest</a></li>
+                        <li><a href="Fixtures&Results.html">Fixtures & Results</a></li>
+                        <li><a href="standings.html">Groups</a></li>
+                        <li><a href="draws.html">Draws</a></li>
+                        <li class="km"><a href="#">Know More</a></li>
+                        <div id="mini_div">
+                            <a style="text-decoration: none;" href="index.html">Busa League</a>
+                            <a style="text-decoration: none;" href="stories.html">Latest</a>
+                            <a style="text-decoration: none;" href="Fixtures&Results.html">Fixtures & Results</a>
+                            <a style="text-decoration: none;" href="standings.html">Groups</a>
+                            <a style="text-decoration: none;" href="draws.html">Draws</a>
+                            <a style="text-decoration: none;" href="#">Know More</a>
+                        </div>
+                    </ul>
+            </div>
+        </div>
+
+        <section class="topNews">
+            <div id="topNews_container">
+                <div id="topNews">
+                    <div class="leftcol">
+                        <a href="stories.html">
+                            <img src="https://i.ibb.co/JHjr17D/athletico.jpg" alt="This Image Does Not Exist" id="f_image">
+                        </a>
+                    </div>
+                    <div class="rightcol">
+                        <p class="top_p">TUE 15.06.2021 | NEWS</p>
+                        <h1 class="wordings">CHAMPIONS OF LALIGA!</h1>
+                        <p class="wordings_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odio architecto porro ab minus obcaecati, enim maxime dicta ex modi.</p>
+                    </div>
+                </div> 
+                <div id="topNewsOne" style="display: none;">
+                    <div class="leftcol">
+                        <a href="stories.html">
+                            <img src="https://i.ibb.co/JHjr17D/athletico.jpg" alt="This Image Does Not Exist" id="f_image">
+                        </a>
+                    </div>
+                    <div class="rightcol">
+                        <p class="top_p">TUE 15.06.2021 | NEWS</p>
+                        <h1 class="wordings">CHAMPIONS OF LALIGA!</h1>
+                        <p class="wordings_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odio architecto porro ab minus obcaecati, enim maxime dicta ex modi.</p>
+                    </div>
+                </div> 
+
+                <div id="topNewsTwo" style="display: none;">
+                    <div class="leftcol">
+                        <a href="stories.html">
+                            <img src="https://i.ibb.co/Qj7VpG0/winners2.jpg" alt="This Image Does Not Exist" id="f_image">
+                        </a>     
+                    </div>
+                    <div class="rightcol">
+                        <p class="top_p">WED 16.06.2021 | NEWS</p>
+                        <h1 class="wordings">INTER KNOCKS OUT JUVE TO BECOME VICTORIOUS.</h1>
+                        <p class="wordings_">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, neque tempore.</p>
+                    </div>
+                </div> 
+
+                 <div id="topNewsThree" style="display: none;">
+                    <div class="leftcol"> 
+                        <a href="stories.html">
+                            <img src="https://i.ibb.co/SsMW8zP/winners3.jpg" alt="This Image Does Not Exist" id="f_image">
+                        </a>
+                    </div>
+                    <div class="rightcol">
+                        <p class="top_p">THUR 17.06.2021 | NEWS</p>
+                        <h1 class="wordings">MAN CITY TAKES THE PREMIER LEAGUE AGAIN</h1>
+                        <p class="wordings_">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis impedit fuga totam molestiae cumque numquam autem quos?</p>
+                    </div>
+                </div>   
+
+                <div id="topNewsFour" style="display: none;">
+                    <div class="leftcol">
+                        <a href="stories.html">
+                            <img src="https://i.ibb.co/jZrYD8T/left-col.jpg" alt="This Image Does Not Exist" id="f_image">
+                        </a>
+                    </div>
+                    <div class="rightcol">
+                        <p class="top_p">FRI 18.06.2021 | NEWS</p>
+                        <h1 class="wordings">OUT OF THE BLUES!</h1>
+                        <p class="wordings_">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti quasi tempore quidem!</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <div class="transition_span">
+            <span onclick="influence('topNewsOne')" id="swiper_transition1" class="focus"></span>
+            <span onclick="influence('topNewsTwo')" id="swiper_transition2"></span>
+            <span onclick="influence('topNewsThree')" id="swiper_transition3"></span>
+            <span onclick="influence('topNewsFour')" id="swiper_transition4"></span>
+        </div>
+
+        <div class="next_matches">
+            <h1 class="up_next">UP NEXT</h1>
+            <div class="left">
+                <div class="left_left">
+                    <div class="top_date"> <span class="date_span">TUE 07/08/2002</span> <span class="span1">19:00</span></div>
+                    <div id="match1">
+                        <div class="inner_matches" style="display: flex;">
+                            <div class="index_home"><img width="44px" height="44px" src="https://i.ibb.co/YbfJ4m1/interlogo.png" alt="Image Not Found"></div>
+                            <div class="index_versus">VS<span></span></div>
+                            <div class="index_away"><img width="44px" height="44px" src="https://i.ibb.co/TTCn3JJ/psg.png " alt="Image Not Found"></div>
+                        </div>
+                    </div>
+                    <div id="hashtag1"> <span class="league_writing">BUSA LEAGUE</span></div>
+                </div>
+
+                <br>
+                <div class="left_right">
+                    <div>    
+                        <div class="top_date_2"> <span class="date2_span">MON 07/08/2002</span> <span class="span2">22:00</span></div>
+                    </div>
+                    <div id="match2">
+                        <div class="inner_matches" style="display: flex;">
+                            <div class="index_home"><img width="44px" height="44px" src="https://i.ibb.co/TTCn3JJ/psg.png " alt="Image Not Found"></div>
+                            <div class="index_versus">VS<span></span></div>
+                            <div class="index_away"><img width="44px" height="44px" src="https://i.ibb.co/sH6XYy3/everton.png" alt="Image Not Found"></div>
+                        </div>
+                    </div>
+                    <div id="hashtag2"><span class="league_writing">BUSA LEAGUE</span></div>    
+                </div>
+            </div>
+            <div class="right">
+                <div class="right_left">
+                    <div class="top_date"> <span class="date3_span">FRI 07/08/2002</span> <span class="span1">19:00</span></div>
+                    <div id="match3">
+                        <div class="inner_matches" style="display: flex;">
+                            <div class="index_home"><img width="44px" height="44px" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" alt="Image Not Found"></div>
+                            <div class="index_versus">VS<span></span></div>
+                            <div class="index_away"><img width="44px" height="44px" src="https://i.ibb.co/8rBjZCz/ac-milan.png" alt="Image Not Found"></div>
+                        </div>
+                    </div>
+                    <div id="hashtag3"><span class="league_writing">BUSA LEAGUE</span></div>
+                </div>
+
+                <br>
+                <div class="right_right">
+                    <div>    
+                        <div class="top_date"><span class="date4_span">SUN 07/08/2002</span> <span class="span2">22:00</span></div>
+                    </div>
+                    <div id="match4">
+                        <div class="inner_matches" style="display: flex;">
+                            <div class="index_home"><img width="44px" height="44px" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" alt="Image Not Found"></div>
+                            <div class="index_versus">VS<span></span></div>
+                            <div class="index_away"><img width="44px" height="44px" src="https://i.ibb.co/68gqBJm/barcenola-logo.png" alt="Image Not Found"></div>
+                        </div>
+                    </div>
+                    <div id="hashtag4"><span class="league_writing">BUSA LEAGUE</span></div>    
+                </div>
+            </div>
+            <div class="view_fixtures">
+                <a href="Fixtures&Results.html" style="text-decoration: none;">
+                    <button id="next_fixtures"><span>View all fixtures and results</span></button>
+                </a>
+            </div>
+        </div>
+            <div id="latest_news">
+            <div class="latest_news_text"><span class="latest_news_span">Latest News</span></div>
+            <div class="news_section">
+                <a href="stories.html">
+                    <div class="news_box_1">
+                        <a href="stories.html" style="text-decoration: none;"><span class="span_news_1">Slow day at the office</span></a> 
+                     </div>
+                </a>
+                <div class="news_box_2">
+                    <a href="stories.html">
+                        <div class="news_top"><img class="image_news" src="https://i.ibb.co/jZrYD8T/left-col.jpg" width="100%" height="100%" alt="No Image Found"></div>
+                        <a href="stories.html" style="text-decoration: none;"><div class="news_writing"><span class="span_news_2">Chelsea, victorious over Norwich</span></div></a>
+                    </a>
+                </div>
+                <div class="news_box_3">
+                    <a href="stories.html">
+                        <div class="news_top"><img class="image_news" src="liverpool.jpg" width="100%" height="100%" alt="Image Not Found"></div>
+                        <a href="stories.html" style="text-decoration: none;"><div class="news_writing"><span class="span_news_3">Top Scorer: Mo Salah</span></div></a>
+                    </a>
+                </div>
+                <div id="newsB">
+                    <div class="news_box_3">
+                        <a href="stories.html">
+                            <div class="news_top"><img width="100%" height="100%" src="westham.jpg" alt="Image Not Found"></div>
+                            <a href="stories.html" style="text-decoration: none;"><div class="news_writing"><span class="span_news_5">Westham bests Tottenham Hotspur to bag the 3 points</span></div></a>
+                        </a>
+                    </div>
+                    <div class="news_box_2">
+                        <a href="stories.html">
+                            <div class="news_top"><img src="arsenal.jpg" width="100%" height="100%" alt="Image Not Found"></div>
+                            <a href="stories.html" style="text-decoration: none;"><div class="news_writing"><span class="span_news_6">Gunners getting their touch back</span></div></a>
+                        </a>
+                    </div>
+                    <div class="news_box_1">
+                        <a href="#" style="text-decoration: none;"><span class="span_news_4">Player of the Month : </span></a>
+                    </div>
+                </div>
+                <a href="stories.html">
+                    <button id="goto_news">More News</button>
+                </a>
+            </div>
+        </div>  
+
+        <section id="highlights">
+            <div id="highlight_title"><span id="span_title">Highlights</span></div>
+            <div id="highlight_slider_left">
+                <svg id="left_highlight_svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z"/></svg>
+            </div>
+            <div id="highlight_slider_right">
+                <svg id="right_highlight_svg" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z"/></svg>            
+            </div>            
+            <div id="highlight_section">
+                <div id="highlight_scroler">
+                    <div id="move_highlight">
+                        <div class="high_light">
+                            <div class="vid_highlight"></div>
+                            <div class="vid_inference">
+                                <p class="highlight_date">6 days ago</p>
+                                <span class="highlight_report">Highlights: AC Milan 3-2 Inter MIlan</span>
+                            </div>
+                        </div>
+                        <div class="high_light">
+                            <div class="vid_highlight"></div>
+                            <div class="vid_inference">
+                                <p class="highlight_date">6 days ago</p>
+                                <span class="highlight_report">Highlights: Liverpool 5-2 Barcelona</span>
+                            </div>
+                        </div>
+                        <div class="high_light">
+                            <div class="vid_highlight"></div>
+                            <div class="vid_inference">
+                                <p class="highlight_date">6 days ago</p>
+                                <span class="highlight_report">Highlights: Celtic 3-3 Manchester United</span>
+                            </div>
+                        </div>
+                        <div class="high_light">
+                            <div class="vid_highlight"></div>
+                            <div class="vid_inference">
+                                <p class="highlight_date">6 days ago</p>
+                                <span class="highlight_report">Highlights: Paris Saint German 1-2 Leicester </span>
+                            </div>
+                        </div>
+                        <div class="high_light">
+                            <div class="vid_highlight"></div>
+                            <div class="vid_inference">
+                                <p class="highlight_date">6 days ago</p>
+                                <span class="highlight_report">Highlights: Paris Saint German 1-2 Leicester </span>
+                            </div>
+                        </div>
+                        <div class="high_light">
+                            <div class="vid_highlight"></div>
+                            <div class="vid_inference">
+                                <p class="highlight_date">6 days ago</p>
+                                <span class="highlight_report">Highlights: Paris Saint German 1-2 Leicester </span>
+                            </div>
+                        </div>
+                        <div class="high_light">
+                            <div class="vid_highlight"></div>
+                            <div class="vid_inference">
+                                <p class="highlight_date">6 days ago</p>
+                                <span class="highlight_report">Highlights: Paris Saint German 1-2 Leicester </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="standings">
+            <header class="standings_header">
+                <h2 class="header_h2">Groups</h2>
+            </header>
+            <div class="groups">
+                <div id="groups_">
+                    <div class="group_1">
+                        <header><h1>Group A</h1></header>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="table_team_name"></th>
+                                    <th class="table_team_played">P</th>
+                                    <th class="table_team_goal_diff">+/-</th>
+                                    <th class="table_team_points">Pts</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/YbfJ4m1/interlogo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Inter</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>2</span>
+                                    </td>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/zGL4PSh/everton.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Everton</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>6</span>
+                                    </td>
+                                    <td>
+                                        <span>8</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/TTCn3JJ/psg.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">PSG</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>7</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Celtic</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>3</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/PQxn8XT/man-utd.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Man Utd</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>-2</span>
+                                    </td>
+                                    <td>
+                                        <span>0</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="group_1">
+                        <header><h1>Group B</h1></header>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="table_team_name"></th>
+                                    <th class="table_team_played">P</th>
+                                    <th class="table_team_goal_diff">+/-</th>
+                                    <th class="table_team_points">Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/h8TPx0D/man-city-logo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Man City</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>2</span>
+                                    </td>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/j6skRXn/liverpool.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Liverpool</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>6</span>
+                                    </td>
+                                    <td>
+                                        <span>8</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/fXR2Jth/ac-milan.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Milan</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>7</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Leicester</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>3</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Barcelona</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>-2</span>
+                                    </td>
+                                    <td>
+                                        <span>0</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="group_1">
+                        <header><h1>Group C</h1></header>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="table_team_name"></th>
+                                    <th class="table_team_played">P</th>
+                                    <th class="table_team_goal_diff">+/-</th>
+                                    <th class="table_team_points">Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">AS Roma</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>2</span>
+                                    </td>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Athletico</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>6</span>
+                                    </td>
+                                    <td>
+                                        <span>8</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Aston Villa</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>7</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex;">
+                                        <a style="text-decoration: none;" class="table_team_name-" href="#">
+                                            <img src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" style="height: 33px; width: 34px;" alt="Image Not Found">
+                                            <span class="logo_name">Arsenal</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>3</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="more_standings">
+                <a class="button_more_standings" target="_self" role="button" href="standings.html">
+                    <button id="button_groups"><span>Groups</span></button>
+                </a>
+            </div>
+        </div> 
+        <hr>
+        <div class="sponsored_footer">
+            <div class="busa_sponsored">
+                <img src="https://i.ibb.co/VqqzNV1/busa-logo-sponsored.jpg" alt="Image Not Found"> <span id="sponsored_text">Proudly</span>
+            </div>
+            <div id="sponsored">
+                <h4>Sponsored By</h4>
+                <img src="https://i.ibb.co/RYwdQGq/polaris-bank-logo.png" alt="Image Not Found">
+            </div>
+        </div>
+        <footer id="home_footer">
+            <div class="footer_details">
+                <div class="footer_shortcut">
+                    <span class="footer_shortcut_span">Latest</span>
+                    <span class="footer_shortcut_span">Fixtures & Results</span>
+                    <span class="footer_shortcut_span">Groups</span>
+                    <span class="footer_shortcut_span">Draws</span>
+                    <span class="footer_shortcut_span">Know More</span>
+                    <div class="footer_follows"><span class="footer_follow_span">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>                </span></div>
+                     </div>
+                </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+
+    
+        
+      

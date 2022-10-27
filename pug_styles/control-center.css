@@ -1,0 +1,132 @@
+*{
+    --text-header-font-size: 1.2rem;
+    --text-header-font-weight: bold;
+    --text-header-line-height: 1.33;
+    font-family: "core_sans_regular", Arial, Helvetica, sans-serif;
+    font-size: 19;
+}
+body{
+    margin: 0;
+}
+/* #logout_form  button{
+    float: right;
+} */
+#hidden_message{
+    display: none;
+}
+#logout_button{
+    background-color: black;
+    border: 0px;
+    color: white;
+    --text-header-font-size: 1.2rem;
+    --text-header-font-weight: bold;
+    --text-header-line-height: 1.33;
+    font-family: "core_sans_regular", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 19; 
+    position: relative;
+    top: 22px;
+    left: 95%;
+}
+#logout_button:hover{
+    color: rgb(63,72,204);
+}
+#welcome_bar{
+    position: relative; height: 39%;
+}
+#image_div{
+    width: 30px;
+    height: 30px;
+}
+#welcome_bar > a > img {
+    width: 59px;
+    height: 59px;
+    position: relative;
+    left: 50%;
+    bottom: 42px;
+}
+.nav_container {
+    padding: 2px;
+    margin: 0;
+    height: 59;
+    background-color: black;
+}
+#welcome_bar > span:nth-child(1) {
+    color: rgb(63,72,204);
+    --text-header-font-size: 1.2rem;
+    --text-header-font-weight: bold;
+    --text-header-line-height: 1.33;
+    font-family: "core_sans_regular", Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 12;
+    display: flex;
+    bottom: 1px;
+    left: 22px;
+}
+#welcome_bar > span:nth-child(1) > h2:nth-child(1){
+    color: yellow;
+}
+.header_span{
+    font-size: 29px; font-weight: bold;
+    margin-left: 22px;
+    position: relative;
+    top: 33px;
+}
+#clubs_display{
+    height: 56vh;
+    width: 93vh;
+    box-shadow: 0 6px 12px rgba(0,0,0,.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#draw_action{
+    display: flex;
+    margin-top: 651px;
+    justify-content: center;
+}
+#draw_button {
+    border-radius: 0;
+    background-color: rgb(63,72,204);
+    color: white;
+    border: 0;
+    height: 38;
+    width: 97;
+    cursor: pointer;
+    transition: ease all .25s;
+    font-size: 15;
+}
+#draw_button:hover{
+    color: rgb(0,0,0,1);
+}
+.img{
+    margin: 4%;
+}
+.alert {
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    color: black;
+    width: 100%;
+    background-color: red;
+}
+/*Media Query*/
+@media(max-width:1287px){
+    #hidden_message{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #hidden_message h2{
+        color: grey;
+    }
+    .nav_container, span, #clubs_display, #draw_action{
+        display: none;
+    }
+}

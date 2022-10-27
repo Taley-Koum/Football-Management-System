@@ -1,0 +1,40 @@
+html 
+    head 
+        title Busa Football League Control-Center
+        style 
+            include ../pug_styles/control-center.css
+    body 
+        != messages('messages', locals) 
+        div(id='hidden_message')
+            h2 Revisit with a screen size larger than original.
+        .nav_container 
+            form(action="/logout" method="get" id="logout_form")
+                button(type="submit" id="Logout_button") Logout
+            #welcome_bar 
+                    span 
+                        h2 Welcome, 
+                        h2 Busa League Admin 
+                    a(href="http://localhost:9986") 
+                        img(src="https://i.ibb.co/j3gZ4WM/busa-logo.jpg", alt="")           
+        span(class='header_span') Perform draw action
+        #clubs_display 
+                    <img class="img" src="https://i.ibb.co/fXR2Jth/ac-milan.png" width="89" height="89px" alt="AC-Milan">
+                    <img class="img" src="https://i.ibb.co/K54Mz1L/arsenal-logo.png" width="89px" height="89px" alt="Arsenal">
+                    <img class="img" src="https://i.ibb.co/T1J1qR4/as-roma-logo.png" width="89px" height="89px" alt="AS-Roma">
+                    <img class="img" src="https://i.ibb.co/xYZtZ25/aston-villa-logo.png" width="89px" height="89px" alt="Aston-Villa">
+                    <img class="img" src="https://i.ibb.co/bLS9Tyd/athletico-madrid-logo.png" width="89px" height="89px" alt="Athletico Madrid">
+                    <img class="img" src="https://i.ibb.co/7KGm0cw/barcenola-logo.png" width="89px" height="89px" alt="Barcelona">
+                    <img class="img" src="https://i.ibb.co/VQKh9xm/celtic-Copy.png" width="89px" height="89px" alt="Celtic">
+                    <img class="img" src="https://i.ibb.co/zGL4PSh/everton.png" width="89px" height="89px" alt="Everton">
+                    <img class="img" src="https://i.ibb.co/YbfJ4m1/interlogo.png" width="89px" height="89px" alt="Inter">
+                    <img class="img" src="https://i.ibb.co/qNqtf2Q/leicester-logo.png" width="89px" height="89px" alt="Leicester">
+                    <img class="img" src="https://i.ibb.co/j6skRXn/liverpool.png" width="89px" height="89px" alt="Liverpool">
+                    <img class="img" src="https://i.ibb.co/h8TPx0D/man-city-logo.png" width="89px" height="89px" alt="Man-City">
+                    <img class="img" src="https://i.ibb.co/PQxn8XT/man-utd.png" width="89px" height="89px" alt="Man-Utd">
+                    <img class="img" src="https://i.ibb.co/TTCn3JJ/psg.png" width="89px" height="89px" alt="PSG">
+        #draw_action 
+            form(action="/draw" method="get" id="draw_form")
+                button(type="submit" id="draw_button") DRAW
+        script
+            include ../pug_scripts/control.js
+        
